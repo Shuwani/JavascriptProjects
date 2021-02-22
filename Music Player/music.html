@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC PLAYER</title>
+    <link rel="stylesheet" href="music.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="player">
+        <div class="container">
+           <div class="icons">
+             <a href="#"><i class="fa fa-bars"></i></a>
+             <h1>MY MUSIC</h1>
+             <a href="#"><i class="fa fa-heart"></i></a>
+           </div>
+
+            <!--IMAGE-->
+            <div class="img">
+                <img src="image/tenor.gif">
+            </div>
+
+            <!--TITLE-->
+            <div class="title">
+                <h1>Bollywood Songs</h1>
+                <p>Artist- Neha Kakkar</p>
+            </div>
+
+            <!--TIME-->
+            <div class="time">
+              <div class="time1">00:00</div>
+              <div class="time2"> 00:00</div>
+            </div>
+
+            <!--PROGRESS BAR-->
+           <div class="progressbar">
+              <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()">
+           </div>
+
+           <!--AUDIO BUTTONS-->
+           <div class="audio-btns">
+             <div class="play-btns">
+                <a href="#"><i class="fa fa-backward" onclick="prevAudio()"></i></a>
+                <a href="#" class="play-pause" onclick="tooglePlayPause()"><i class="fa fa-pause"></i></a>
+                <a href="#"><i class="fa fa-forward" onclick="nextAudio()"></i></a>
+             </div>
+               
+              <div class="repeat-btns">
+               <a href="#"><i class="fa fa-retweet"></i></a>
+               <button class="decrease" onclick="decreaseVolume()">-</button>
+               <a href="#" class="volume-up"><i class="fa fa-volume-up"></i></a>
+               <button class="increase" onclick="increaseVolume()">+</button>
+               <a href="#"><i class="fa fa-random"></i></a>
+              </div>
+            </div>
+         </div>
+      </div>
+                <script src="music.js"></script>
+</body>
+</html>
